@@ -1,0 +1,6 @@
+// TERMITE FORMAT 0.0.0
+
+out("Yo yo yo");
+bool yes = true;
+
+// if yes then out("Hello") else out("Not hello")

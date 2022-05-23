@@ -1,2 +1,2 @@
 # Termite
-Everything related to termite
+Everything related to TermiteLang and Mite IDE

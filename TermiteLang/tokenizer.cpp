@@ -2,9 +2,6 @@
 #include "common.h"
 #include "file.h"
 
-// #include <array>
-#include <vector>
-
 namespace termite::lang
 {
 	using namespace termite::lang;

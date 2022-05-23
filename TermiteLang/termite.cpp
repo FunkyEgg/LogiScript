@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	std::string fileLocation = current_path().string() + "\\" + argv[1];
+	std::string fileLocation = current_path().string() + "/" + argv[1];
 
 	File file = File::File(fileLocation);
 	

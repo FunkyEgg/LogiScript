@@ -8,9 +8,13 @@ namespace termite::lang
 	{
 	private:
 		std::string m_FileLocation;
+		std::string m_FileContents;
 	public:
 		File(std::string fileLocation);
 		~File();
-		std::string ReadFile();
+		int Lines();
+		inline std::string GetFileContents() { return m_FileContents; }
+	private:
+		void Init();
 	};
 }

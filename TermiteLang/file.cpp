@@ -8,16 +8,25 @@ namespace termite::lang
 	File::File(std::string fileLocation)
 	{
 		m_FileLocation = fileLocation;
+		m_FileContents;
+
+		Init();
 	}
 
-	std::string File::ReadFile()
+	File::~File() {}
+
+	void File::Init()
 	{
 		std::ifstream ifs(m_FileLocation);
 		std::string fileContents((std::istreambuf_iterator<char>(ifs)),
 			(std::istreambuf_iterator<char>()));
 
-		return fileContents;
+		m_FileContents = fileContents;
 	}
 
-	File::~File() {}
+	int File::Lines()
+	{
+		// TODO
+		return -1;
+	}
 }

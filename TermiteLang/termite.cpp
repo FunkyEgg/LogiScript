@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	File file = File::File(fileLocation);
 	
 	std::cout << "File location: " << fileLocation << std::endl;
-	std::cout << "File contents:\n[\n" << file.ReadFile() << "\n]" << std::endl;
+	std::cout << "File contents:\n[\n" << file.GetFileContents() << "\n]" << std::endl;
 
 	return 0;
 }

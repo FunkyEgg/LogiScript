@@ -2,11 +2,13 @@
 
 int main(int argc, char** argv)
 {
+	std::string text;
+
 	bool exit = false;
 
 	while (!exit)
 	{
-		std::cout << std::cin.get();
+		text = text + std::string(std::cin.get());
 	}
 
 	return 0;

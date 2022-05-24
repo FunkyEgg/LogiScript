@@ -9,6 +9,7 @@ namespace termite::lang
 	{
 		m_FileLocation = fileLocation;
 		m_FileContents;
+		m_FileLines;
 
 		Init();
 	}
@@ -22,11 +23,5 @@ namespace termite::lang
 			(std::istreambuf_iterator<char>()));
 
 		m_FileContents = fileContents;
-	}
-
-	int File::Lines()
-	{
-		// TODO
-		return -1;
 	}
 }

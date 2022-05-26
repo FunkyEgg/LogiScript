@@ -22,5 +22,7 @@ int main(int argc, char **argv)
 	std::cout << "File location: " << fileLocation << std::endl;
 	std::cout << "File contents:\n[\n" << file.GetFileContents() << "\n]" << std::endl;
 
+	std::cin.get();
+
 	return 0;
 }

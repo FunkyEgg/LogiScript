@@ -1,13 +1,13 @@
 ; All provided function types
-gate ::= {not | and | or}
-comp ::= {gate | comp}
+gate ::= { not | and | or | gate }
+comp ::= { gate | comp }
 
 ; All base provided gates
 not ::= '!'
-and ::= '&&'
-or ::= '||'
+and ::= '&'
+or ::= '|'
 
 ; All base provided value types
 bit ::= '0' | '1'
 bits ::= '0b' {bit}
-hex ::= '0x' {'0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'A' | 'B' | 'C' | 'D' | 'E' | 'F'}
+hex ::= '0x' { '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'A' | 'B' | 'C' | 'D' | 'E' | 'F' }

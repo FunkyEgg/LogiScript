@@ -1,8 +1,8 @@
 import { LogiFile } from './LogiLang/file.ts';
 
-let fileLoc: string = 'NULL';
+let fileLoc = 'NULL';
 
-let i: number = 0;
+let i = 0;
 while (i < Deno.args.length) {
     if (Deno.args[i] == '--file' || '-f') {
         fileLoc = Deno.args[i + 1];

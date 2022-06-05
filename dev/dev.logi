@@ -1,7 +1,16 @@
 (gate nand 2
-    (no
-        (and &1 &2)))
+    (ret
+        (not
+            (and &1 &2))))
 
-(comp testComp 2
+(gate xor 2
+    (if (and (nand (&1 &2)))))
+
+(comp adder 2
     (out
-        (nand &1 &2)))
+        (if (and (not &1) (no2 &2))
+            (out 0))
+        (elif (xor &1 &2)
+            (out 1))
+        (else
+            (out 0b10))))

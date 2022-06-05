@@ -1,6 +1,6 @@
 ; All provided function types
-gate ::= { not | and | or | gate }
-comp ::= { gate | comp }
+gate ::= { not | and | if | elif | else | or | gate} ret
+comp ::= { not | and | if | elif | else | or | gate | comp | out }
 
 ; All base provided gates
 not ::= '!'

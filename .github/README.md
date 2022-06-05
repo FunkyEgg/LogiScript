@@ -1,6 +1,6 @@
-# LogiLang
+# LogiScript
 The logical choice for programming
-> LogiLang is still in early alpha, anything can change at any point
+> LogiScript is still in early alpha, anything can change at any point
 
 ## Compiling from source
 

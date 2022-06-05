@@ -1,3 +1,7 @@
-gate nand 2 {
-    not and &1 &2
-}
+(gate nand 2
+    (no
+        (and &1 &2)))
+
+(comp testComp 2
+    (out
+        (nand &1 &2)))

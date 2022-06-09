@@ -4,10 +4,8 @@ export function tokenize(fileContents: string): string[] {
     let noComments: string[] = [];
 
     for (let line in lines)
-        if (!line.includes('//'))
+        if (!lines[line].startsWith('//'))
             noComments.push(lines[line]);
-
-    console.log(noComments);
 
     return noComments.join("")
         .replaceAll('(', ' ')

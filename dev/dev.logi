@@ -1,14 +1,14 @@
+//(gate xor 2
+//    (and (or &1 &2) (nand &1 &2)))
+
+//(comp adder 2
+//    (if (and (not &1) (not &2))
+//        (out 0))
+//    (elif (xor &1 &2)
+//       (out 1))
+//    (else
+//        (out 0b10)))
+
 (gate nand 2
     (not
         (and &1 &2)))
-
-(gate xor 2
-    (and (or &1 &2) (nand &1 &2)))
-
-(comp adder 2
-    (if (and (not &1) (not &2))
-        (out 0))
-    (elif (xor &1 &2)
-        (out 1))
-    (else
-        (out 0b10)))

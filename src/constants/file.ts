@@ -6,7 +6,6 @@ export class File {
         const decoder = new TextDecoder('utf-8');
 
         this.p_fileLoc = fileLocation;
-
         this.p_fileContents = decoder.decode(Deno.readFileSync(this.p_fileLoc));
     }
 

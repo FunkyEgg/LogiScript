@@ -1,1 +1,1 @@
-deno compile --output ../dist/logilang.exe --allow-read ../src/main.ts
+deno compile --output ../dist/logilang --allow-read ../src/main.ts

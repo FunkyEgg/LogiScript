@@ -15,6 +15,6 @@ export function tokenize(fileContents: string): string[] {
     return noComments.join("")
         .replaceAll('(', ' ')
         .replaceAll(')', ' ')
-        .split('(' && ' ')
+        .split(' ')
         .filter(line => line != "");
 }

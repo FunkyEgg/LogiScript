@@ -1,5 +1,3 @@
-const keywords = ['gate', 'comp']
-
 export function analyze(tokens: string[]): void {
     let skipIter = false;
 

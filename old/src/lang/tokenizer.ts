@@ -1,7 +1,7 @@
 export function tokenize(fileContents: string): string[] {
-    let lines = fileContents.split('\r\n');
+    const lines = fileContents.split('\r\n');
 
-    let noComments: string[] = [];
+    const noComments: string[] = [];
 
     // for (let line in lines)
     //     if (!lines[line].startsWith('//'))

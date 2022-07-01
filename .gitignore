@@ -1,1 +1,4 @@
-dist/
+bin/
+
+# Old source code (Once all the haxe is written to replace this it will be deleted)
+old/dist

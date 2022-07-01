@@ -1,0 +1,12 @@
+# Main Def
+-cp src
+--main Main
+
+# Other options
+-D analyzer-optimize
+
+# Librarys
+--library console.hx
+
+# Targets
+--cpp bin/cpp
